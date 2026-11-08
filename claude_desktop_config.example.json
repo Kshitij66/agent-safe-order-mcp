@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "agent-safe-orders": {
+      "command": "/ABSOLUTE/PATH/TO/agent-safe-orders-mcp/.venv/bin/order-mcp",
+      "env": {
+        "DATABASE_URL": "postgresql+psycopg://orders:orders@localhost:5432/orders",
+        "MCP_SCOPES": "orders:read,inventory:read,orders:write,inventory:write"
+      }
+    }
+  }
+}
